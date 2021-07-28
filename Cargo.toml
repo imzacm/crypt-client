@@ -1,0 +1,22 @@
+[package]
+name = "crypt-client"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+default = ["dummy-drivers"]
+dummy-drivers = []
+
+[dependencies]
+rpassword = "5.0.1"
+rustyline = "8.2.0"
+clearscreen = "1.0.6"
+nom = "6.2.1"
+argonautica = "0.2.0"
+rand = "0.8.4"
+aes = "0.7.4"
+block-modes = "0.8.1"
+serde = { version = "1.0", features = ["derive"] }
+bincode2 = "2.0.1"
